@@ -16,7 +16,32 @@
     <script>
       
     	// This is where you should execute your drawMap function // 
-
+      drawMap();
     </script>
+    <div>
+      <article>
+        <hearer>
+          <h3>Source</h3>
+        </hearer>
+          <p>ALl the souce comes from the local file 'response.js' as a object, which could also be obtain online. The link for each crime is in the popup windown as the circle is clicked.</p>
+      </article>
+      <article>
+        <hearer>
+          <h3>Description</h3>
+        </hearer>
+        <p>
+          This map shows the record from the police record for criminal events.
+          circle stands for the place that the criminal happend       
+            <button onclick="myFunction()">More..</button>
+            <p id="demo"></p>
+        </p>
+        <script id = "descrip">
+          function myFunction() {
+            document.getElementById("demo").innerHTML = "1. different color stands for different race, white for the white, black for the black, yellow for the asian, and green for unknown and others which is also indicated in the popup window as it was clicked. <br> 2. different size stands for the victim's age which get bigger as the age gets younger which should bring out attention. <br> 3. when click on the circle, the infomation of the crime would be shown as the format of (date)(race)(if armed)(if killed) and the (source link) to help check the detail.";
+          }
+        </script>
+      </article>
+    </div>
+    
   </body>
 </html>
